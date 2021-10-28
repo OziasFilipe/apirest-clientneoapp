@@ -14,16 +14,10 @@
 	<name>neoApiDocker</name>
 	<description>neoApiDocker</description>
 	<properties>
-		<java.version>11</java.version>
+		<!-- <java.version>11</java.version>  -->
 	</properties>
 	<dependencies>
 
-	<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
-<dependency>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-compiler-plugin</artifactId>
-    <version>3.8.1</version>
-</dependency>
 
 	
 			<!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui -->
