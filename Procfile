@@ -1,1 +1,1 @@
-web: java -jar build/libs/neoApiDocker-1.0.jar
+web java -Dserver.port=$PORT $JAVA_OPTS -jar target/neoApiDocker-0.0.1-SNAPSHOT.jar
