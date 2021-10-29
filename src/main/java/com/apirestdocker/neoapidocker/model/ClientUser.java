@@ -127,11 +127,11 @@ import javax.persistence.Table;
 			Email = email;
 		}
 
-		public long getDataNascimento() {
+		public long getAnoNascimento() {
 			return AnoNascimento;
 		}
 
-		public void setDataNascimento(long Ano) {
+		public void setAnoNascimento(long Ano) {
 			AnoNascimento = Ano;
 		}
 
