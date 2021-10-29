@@ -11,14 +11,15 @@
 	<groupId>com.apiRestDocker</groupId>
 	<artifactId>neoApiDocker</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name>neoApiDocker</name>
 	<description>neoApiDocker</description>
 	<properties>
-		<!-- <java.version>11</java.version>  -->
+		<java.version>11</java.version> 
 	</properties>
 	<dependencies>
 
-
+		
 	
 			<!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui -->
 		<dependency>
@@ -44,11 +45,11 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
-		 <dependency>
+		 <!-- PostgreSQL -->
+        <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
-        </dependency> 
-
+        </dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
