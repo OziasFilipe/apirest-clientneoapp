@@ -32,7 +32,7 @@ Delete (/ Cliente ) - (/cliente /{id}) - (/cliente /deleteAll): 	Com esse métod
 
 	 
 
-Tecnologias utilizadas para criar e testar 
+# Tecnologias utilizadas para criar e testar 
 
 	 
 
@@ -50,7 +50,7 @@ Swagger-UI
 
  
 
-WEB URL: 
+# WEB URL: 
 
 	 
 
@@ -60,7 +60,7 @@ Swagger-UI: https://apirest-clientneoapp.herokuapp.com/swagger-ui.html#/
 
  
 
-Postman Teste URL:  
+# Postman Teste URL:  
 
 	Get: https://apirest-clientneoapp.herokuapp.com/cliente 
 
@@ -80,7 +80,7 @@ Delete: https://apirest-clientneoapp.herokuapp.com/cliente /deleteAll
 
  
 
-Informação sobre oque foi feito  na API 
+# Informação sobre oque foi feito  na API 
 
 Suporte ao editor, incluindo: 
 
@@ -110,7 +110,7 @@ Validação Get, Post, Delete e Put dentro do Swagger-UI.html
 
  
 
-Funcionalidade:  
+# Funcionalidade:  
 
 Permita criação de novos clientes.   
 
@@ -126,7 +126,7 @@ Gera a idade automaticamente conforme a data de nascimento cadastrada.
 
  
 
-Problemas que teve na hora do desenvolvimento 
+# Problemas que teve na hora do desenvolvimento 
 
  
 
