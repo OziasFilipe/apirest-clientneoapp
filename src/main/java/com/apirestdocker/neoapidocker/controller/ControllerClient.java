@@ -24,6 +24,8 @@ public class ControllerClient {
 	
 	@Autowired
 	private RepositoryClient repositorio;
+	
+	
 
 	/********** Requisição GET **********/
 	
@@ -38,6 +40,79 @@ public class ControllerClient {
 	public ClientUser buscarClientUserId(@PathVariable(value="Id")long id) {
 		return repositorio.findById(id);
 	}
+	
+	@GetMapping("cliente/nome")
+	@ApiOperation(value="Buscar elemento através do nome dentro do parametro")
+	public List<ClientUser> nomeBusca(String nome){
+		
+		return repositorio.findByNome(nome);
+	}
+	
+	@GetMapping("cliente/endereco")
+	@ApiOperation(value="Buscar elemento através do endereco dentro do parametro")
+	public List<ClientUser> enderecoBusca(String endereco){
+		
+		return repositorio.findByEndereco(endereco);
+	}
+	
+	@GetMapping("cliente/cidade")
+	@ApiOperation(value="Buscar elemento através da cidade dentro do parametro")
+	public List<ClientUser> CidadeBusca(String cidade){
+		
+		return repositorio.findByCidade(cidade);
+	}
+	
+	@GetMapping("cliente/bairro")
+	@ApiOperation(value="Buscar elemento através do bairro dentro do parametro")
+	public List<ClientUser> BairroBusca(String bairro){
+		
+		return repositorio.findByBairro(bairro);
+	}
+	
+	@GetMapping("cliente/estado")
+	@ApiOperation(value="Buscar elemento através do estado dentro do parametro")
+	public List<ClientUser> EstadoBusca(String estado){
+		
+		return repositorio.findByEstado(estado);
+	}
+	
+	@GetMapping("cliente/cep")
+	@ApiOperation(value="Buscar elemento através do cep dentro do parametro")
+	public List<ClientUser> CepBusca(long cep){
+		
+		return repositorio.findByCep(cep);
+	}
+	
+	@GetMapping("cliente/telefone")
+	@ApiOperation(value="Buscar elemento através do telefone dentro do parametro")
+	public List<ClientUser> telefoneBusca(long telefone){
+		
+		return repositorio.findByTelefone(telefone);
+	}
+	
+	@GetMapping("cliente/email")
+	@ApiOperation(value="Buscar elemento através do Email dentro do parametro")
+	public List<ClientUser> EmailBusca(String email){
+		
+		return repositorio.findByEmail(email);
+	}
+	
+	@GetMapping("cliente/anoNascimento")
+	@ApiOperation(value="Buscar elemento através do ano de nascimento dentro do parametro")
+	public List<ClientUser> anoNascimentoBusca(long anoNascimento){
+		
+		return repositorio.findByAnoNascimento(anoNascimento);
+	}
+	
+	@GetMapping("cliente/idade")
+	@ApiOperation(value="Buscar elemento através da idade dentro do parametro")
+	public List<ClientUser> idadeBusca(int idade){
+		
+		return repositorio.findByIdade(idade);
+	}
+	
+	
+
 	
 	/********** Requisição POST *********/
 	
@@ -72,6 +147,13 @@ public class ControllerClient {
 	@PutMapping("cliente")
 	@ApiOperation(value="Atualizar registro do cliente no banco de dados")
 	public ClientUser atualizarCliente(@RequestBody ClientUser user) {
+		return repositorio.save(user);
+	}
+	
+	@PutMapping("cliente/{Id}")
+	@ApiOperation(value="Atualizar registro do cliente atraves do ID no banco de dados")
+	public ClientUser atualizarCliente(@RequestBody ClientUser user, @PathVariable(value="Id")long Id) {
+		user.setId(Id);
 		return repositorio.save(user);
 	}
 }

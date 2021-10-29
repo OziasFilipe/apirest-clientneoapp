@@ -46,11 +46,11 @@ import javax.persistence.Table;
 		@Column(name = "email", nullable = false)
         private String Email;
 		
-		@Column(name = "AnoNascimento", nullable = false,length = 4)
-		private int DataNascimento;
+		@Column(name = "anoNascimento", nullable = false,length = 4)
+		private Long AnoNascimento;
 		
 		@Column(name = "idade", nullable = false)
-        private int Idade;
+        private Long Idade;
 
 		
 		/*Métodos Get e Set para inserção e busca no banco de dados: OBS: @Getter e @Setter não funcionou!*/
@@ -127,21 +127,21 @@ import javax.persistence.Table;
 			Email = email;
 		}
 
-		public int getDataNascimento() {
-			return DataNascimento;
+		public long getDataNascimento() {
+			return AnoNascimento;
 		}
 
-		public void setDataNascimento(int dataNascimento) {
-			DataNascimento = dataNascimento;
+		public void setDataNascimento(long Ano) {
+			AnoNascimento = Ano;
 		}
 
-		public int getIdade() {
+		public long getIdade() {
 			return Idade;
 		}
 
-		public void setIdade(int idade) {
+		public void setIdade(long idade) {
 			
-			Idade = 2021 - this.DataNascimento  ;
+			Idade = 2021 - this.AnoNascimento  ;
 		}
  
 		

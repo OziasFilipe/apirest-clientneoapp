@@ -16,5 +16,4 @@ public class NeoApiDockerApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(NeoApiDockerApplication.class, args);
 	}
-
 }
