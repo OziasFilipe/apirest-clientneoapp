@@ -97,12 +97,7 @@ public class ControllerClient {
 		return repositorio.findByEmail(email);
 	}
 	
-	@GetMapping("cliente/anoNascimento")
-	@ApiOperation(value="Buscar elemento através do ano de nascimento dentro do parametro")
-	public List<ClientUser> anoNascimentoBusca(long anoNascimento){
-		
-		return repositorio.findByAnoNascimento(anoNascimento);
-	}
+	
 	
 	@GetMapping("cliente/idade")
 	@ApiOperation(value="Buscar elemento através da idade dentro do parametro")
