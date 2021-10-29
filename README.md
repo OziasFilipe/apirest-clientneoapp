@@ -102,6 +102,13 @@ Validação Get, Post, Delete e Put dentro do Postman
 
 Validação Get, Post, Delete e Put dentro do Swagger-UI.html 
 
+ 
+
+ 
+
+ 
+
+ 
 
 Problemas que teve na hora do desenvolvimento 
 
