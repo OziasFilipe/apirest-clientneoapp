@@ -110,6 +110,22 @@ Validação Get, Post, Delete e Put dentro do Swagger-UI.html
 
  
 
+Funcionalidade:  
+
+Permita criação de novos clientes.   
+
+Permita a atualização de clientes existentes.   
+
+Permita que listar todos os clientes cadastrados.  
+
+Permita que buscas por atributos cadastrais do cliente.   
+
+Gera a idade automaticamente conforme a data de nascimento cadastrada. 
+
+ 
+
+ 
+
 Problemas que teve na hora do desenvolvimento 
 
  
