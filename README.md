@@ -32,7 +32,7 @@ Delete (/ Cliente ) - (/cliente /{id}) - (/cliente /deleteAll): 	Com esse métod
 
 	 
 
-# Tecnologias utilizadas para criar e testar 
+# Tecnologias utilizadas para criar e testar:
 
 	 
 
@@ -80,7 +80,7 @@ Delete: https://apirest-clientneoapp.herokuapp.com/cliente /deleteAll
 
  
 
-# Informação sobre oque foi feito  na API 
+# Informação sobre oque foi feito  na API:
 
 Suporte ao editor, incluindo: 
 
@@ -126,7 +126,7 @@ Gera a idade automaticamente conforme a data de nascimento cadastrada.
 
  
 
-# Problemas que teve na hora do desenvolvimento 
+# Problemas que teve na hora do desenvolvimento:
 
  
 
