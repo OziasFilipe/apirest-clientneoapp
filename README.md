@@ -6,7 +6,7 @@ Linguagem de programação: Java
 
 Repositorio: https://github.com/OziasFilipe/apirest-clientneoapp 
 
-Heroku: https://apirest-clientneoapp.herokuapp.com/swagger-ui.html#/controller-client/ClienteUsingGET 
+Heroku: https://apirest-clientneoapp.herokuapp.com/swagger-ui.html
 
  
 
