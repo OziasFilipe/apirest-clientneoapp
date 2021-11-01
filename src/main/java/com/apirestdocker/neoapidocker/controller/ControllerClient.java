@@ -26,9 +26,10 @@ public class ControllerClient {
 	private RepositoryClient repositorio;
 	
 	
-
-	/********** Requisição GET **********/
-	
+	/**********                **********/
+	/**********  Requisição GET **********/
+	/**********                **********/
+	 
 	@GetMapping("cliente")
 	@ApiOperation(value="Retorna todos os registros do banco CLIENTE")
 	public List<ClientUser> Cliente() {
@@ -40,6 +41,9 @@ public class ControllerClient {
 	public ClientUser buscarClientUserId(@PathVariable(value="Id")long id) {
 		return repositorio.findById(id);
 	}
+	
+	/**Metodo de teste apenas para o Swegger-ui.html**/
+	/**                                     **/
 	
 	@GetMapping("cliente/nome")
 	@ApiOperation(value="Buscar elemento através do nome dentro do parametro")
@@ -109,7 +113,9 @@ public class ControllerClient {
 	
 
 	
-	/********** Requisição POST *********/
+	/**********                **********/
+	/**********  Requisição POST **********/
+	/**********                **********/
 	
 	@PostMapping("cliente")
 	@ApiOperation(value="Salvar no banco de dados um novo cliente")
@@ -117,7 +123,9 @@ public class ControllerClient {
 		return repositorio.save(user);
 	}
 	
-	/********** Requisição DELETE **********/
+	/**********                **********/
+	/**********  Requisição DELETE **********/
+	/**********                **********/
 	
 	@DeleteMapping("cliente")
 	@ApiOperation(value="Deletar Cliente do banco de dados")
@@ -137,7 +145,66 @@ public class ControllerClient {
 		repositorio.delete(repositorio.findById(Id));
 	}
 	
-	/********** Requisição PUT **********/
+	/**Metodo de teste apenas para o Swegger-ui.html**/
+	/**                                     **/
+	
+	@DeleteMapping("cliente/nome")
+	@ApiOperation(value="deletar através do parametro nome")
+	public void  nomeDelete(String nome){
+		 repositorio.deleteAll(repositorio.findByNome(nome));
+	}
+	
+	@DeleteMapping("cliente/endereco")
+	@ApiOperation(value="deletar através do parametro endereco")
+	public void  enderecoDelete(String endereco){
+		 repositorio.deleteAll(repositorio.findByEndereco(endereco));
+	}
+	
+	@DeleteMapping("cliente/cidade")
+	@ApiOperation(value="deletar através do parametro cidade")
+	public void  cidadeDelete(String cidade){
+		 repositorio.deleteAll(repositorio.findByCidade(cidade));
+	}
+	
+	@DeleteMapping("cliente/bairro")
+	@ApiOperation(value="deletar através do parametro bairro")
+	public void  bairroDelete(String bairro){
+		 repositorio.deleteAll(repositorio.findByBairro(bairro));
+	}
+	
+	@DeleteMapping("cliente/estado")
+	@ApiOperation(value="deletar através do parametro estado")
+	public void  estadoDelete(String estado){
+		 repositorio.deleteAll(repositorio.findByEstado(estado));
+	}
+	
+	@DeleteMapping("cliente/cep")
+	@ApiOperation(value="deletar através do parametro cep")
+	public void  cepDelete(Long cep){
+		 repositorio.deleteAll(repositorio.findByCep(cep));
+	}
+	
+	@DeleteMapping("cliente/telefone")
+	@ApiOperation(value="deletar através do parametro telefone")
+	public void  telefoneDelete(Long telefone){
+		 repositorio.deleteAll(repositorio.findByTelefone(telefone));
+	}
+	
+	@DeleteMapping("cliente/email")
+	@ApiOperation(value="deletar através do parametro email")
+	public void  emailDelete(String email){
+		 repositorio.deleteAll(repositorio.findByEmail(email));
+	}
+	
+	@DeleteMapping("cliente/idade")
+	@ApiOperation(value="deletar através do parametro idade")
+	public void  idadeDelete(int idade){
+		 repositorio.deleteAll(repositorio.findByIdade(idade));
+	}
+	
+	/**********                **********/
+	/**********  Requisição PUT **********/
+	/**********                **********/
 	
 	@PutMapping("cliente")
 	@ApiOperation(value="Atualizar registro do cliente no banco de dados")
